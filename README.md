@@ -1,8 +1,8 @@
-# cpp-mean-lowest-greatest-grades
+# cpp-sampling-mean
 
-Considere que um aluno de uma disciplina da Unifei tem 5 notas de atividades avaliativas entregues. A política do professor da disciplina é descartar a menor e a maior nota antes de calcular a média com as notas restantes. Conhecendo isso, escreva um programa em linguagem C/C++ que leia as 5 notas de atividades, armazenando-as em um vetor para uma verificação posterior de acordo com a política do professor. Após o descarte da menor e a maior nota, calcule a média das notas restantes. O código da main.cpp já apresenta uma versão inicial do programa, juntamente com alguns comentários nas funções.
+Um pesquisador da área de saúde pública realiza 5 coletas diárias de um esgoto para contagem por milhão de um vírus V616. Cada coleta é visualizada por uma câmera de alta definição e a imagem é processada por um programa de Inteligência Artificial que faz essa contagem. A contagem máxima atingida foi de 15 milhões  por amostra. O pesquisador decidiu normalizar as amostras diárias observando a contagem mínima e máxima do dia para calcular uma média, desconsiderando a amostra com contagem mínima.
 
-Uma nota **menor que zero** OU **maior que dez** deve ser descartada e não pode ser armazenada no vetor.
+Termine de escrever as funções do arquivo main.cpp para que calcule e amostre a média das amostras de forma normalizada.
 
 Confira se o repositório está criado em alguma das organizações GitHub:
 * [https://github.com/p7-m5-ecoi02-2021-1](https://github.com/p7-m5-ecoi02-2021-1)
@@ -12,22 +12,22 @@ Veja o **Feeback** no link *Pull requests* para aber se a saída do programa est
 
 ## Exemplos de entrada de dados e a saída esperada
 
-- ENTRADA: 2 5 6 7 8
+- ENTRADA: 2 5 6 7 15
 
-        Media = 6
+        Media: 7.21154
 
-- ENTRADA: 2 8 10 7 6
+- ENTRADA: 2 8 10 7 15
 
-        Media = 7
+        Media: 9.23077
 
-- ENTRADA: 1 1 10 10 9
+- ENTRADA: 1 1 10 10 15
 
-        Media = 6.66667
+        Media: 8.57143
 
-- ENTRADA: -1 2 10 7 6 8 
+- ENTRADA: 2 10 7 6 15
 
-        Media = 7
+        Media: 8.65385
 
-- ENTRADA: 10 10 -1 1 1 9
+- ENTRADA: 10 10 1 1 9
 
-        Media = 6.66667
+        Media: 10.8333
